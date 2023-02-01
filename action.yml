@@ -1,6 +1,9 @@
 name: RDF syntax check
 description: Iterates all RDF files in the repository and validates their syntax. It fails when an invalid file is detected.
 author: AtomGraph
+branding:
+  icon: 'check-circle'
+  color: 'blue'
 
 on: push
 
