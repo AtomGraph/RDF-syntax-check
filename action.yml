@@ -1,5 +1,5 @@
 name: RDF syntax check
-description: GH action that iterates all RDF files in the repository and validates their syntax using Apache Jena's riot parser. The action fails as soon as an invalid file is detected.
+description: Iterates all RDF files in the repository and validates their syntax. It fails when an invalid file is detected.
 author: AtomGraph
 
 on: push
