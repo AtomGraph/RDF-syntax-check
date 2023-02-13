@@ -20,7 +20,7 @@ runs:
       run: sudo apt-get update && sudo apt-get install curl
       shell: bash
     - name: Download Jena
-      run: curl -sS --fail "${{ inputs.asf-archive }}jena/binaries/apache-jena-$${{ inputs.jena-version }}.tar.gz" -o "${{ runner.temp }}/jena.tar.gz"
+      run: curl -sS --fail "${{ inputs.asf-archive }}jena/binaries/apache-jena-${{ inputs.jena-version }}.tar.gz" -o "${{ runner.temp }}/jena.tar.gz"
       shell: bash
     - name: Unpack Jena
       run: tar -zxf jena.tar.gz
@@ -29,7 +29,7 @@ runs:
     - run: echo "$JENA_HOME/bin" >> $GITHUB_PATH
       shell: bash
       env:
-        JENA_HOME: "${{ runner.temp }}/apache-jena-$${{ inputs.jena-version }}"
+        JENA_HOME: "${{ runner.temp }}/apache-jena-${{ inputs.jena-version }}"
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Find RDF files and call riot for each of them
