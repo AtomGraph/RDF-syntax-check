@@ -5,5 +5,5 @@ The action fails as soon as an invalid file is detected.
 ## Usage
 
 ```yml
-- uses: AtomGraph/RDF-syntax-check@v1.0.2
+- uses: AtomGraph/RDF-syntax-check@v1.0.4
 ```
