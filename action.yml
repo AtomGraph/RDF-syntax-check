@@ -31,7 +31,7 @@ runs:
       env:
         JENA_HOME: "${{ runner.temp }}/apache-jena-${{ inputs.jena-version }}"
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Find RDF files and call riot for each of them
       run: find . \( -name "*.ttl" -o -name "*.trig" -o -name "*.nt" -o -name "*.nq" -o -name "*.rdf" -o -name "*.trix" -o -name "*.jsonld" \) -type f -print0 | while read -d $'\0' f; do echo "$f"; riot --validate "$f"; done
       shell: bash
