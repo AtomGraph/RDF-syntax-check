@@ -7,7 +7,16 @@ The action fails as soon as an invalid file is detected.
 ```yml
 name: RDF data validation
 
-on: push
+on:
+  push:
+    paths:
+      - '**.ttl'
+      - '**.trig'
+      - '**.nt'
+      - '**.nq'
+      - '**.rdf'
+      - '**.trix'
+      - '**.jsonld'
 
 jobs:
   rdf-syntax-check:
