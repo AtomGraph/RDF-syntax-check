@@ -23,5 +23,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: RDF syntax check
-        uses: AtomGraph/RDF-syntax-check@v1.0.4
+        uses: AtomGraph/RDF-syntax-check@v1.0.5
 ```
