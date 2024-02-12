@@ -12,7 +12,7 @@ inputs:
   asf-archive:
     description: 'The Apache distribution URL'
     required: true
-    default: http://archive.apache.org/dist/
+    default: https://archive.apache.org/dist/
 runs:
   using: "composite"
   steps:
